@@ -1,0 +1,9 @@
+获取网关设备token###用例个数?8
+用例1-参数全传token查询成功?a1H8jN4MJTx?F884790125F2?${ds_md5}?"message":"成功"
+用例2-PK、DN、DS为空? ? ? ?"message":"请求参数错误"
+用例3-PK为空? ?F884790125F2?${ds_md5}?"message":"请求参数错误"
+用例4-DN为空?a1H8jN4MJTx? ?${ds_md5}?"message":"请求参数错误"
+用例5-DS为空?a1H8jN4MJTx?F884790125F2? ?"message":"请求参数错误"
+用例6-PK错误?1?F884790125F2?${ds_md5}?"message":"账号不存在"
+用例7-DN错误?a1H8jN4MJTx?1?${ds_md5}?"message":"账号不存在"
+用例8-DS错误?a1H8jN4MJTx?F884790125F2?1?"message":"密码错误"

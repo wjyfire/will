@@ -1,0 +1,2 @@
+OTA升级检测###用例个数,1
+用例1-有新固件版本可升级,"""{ \t\""request\"": {}, \t\""params\"": { \t\t\""iotId\"": \""FVPbnqD7XvNJSB2J5Rn80010a60d00\"" \t} }"""

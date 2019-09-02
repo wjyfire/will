@@ -1,0 +1,6 @@
+OTA升级检测###用例个数?5
+用例1-有新固件版本可升级?{\"request\":{},\"params\":{\"iotId\":\"FVPbnqD7XvNJSB2J5Rn80010a60d00\"}}?"data":true
+用例2-无新固件版本可升级?{\"request\":{},\"params\":{\"iotId\":\"fn7Fhd8dQmNAx6jaGoMm0010ee1000\"}}?"data":false
+用例3-iotId不存在?{\"request\":{},\"params\":{\"iotId\":\"323\"}}
+用例4-iotId为空?{\"request\":{},\"params\":{\"iotId\":\"\"}}
+用例5-iotId为电工产品?{\"request\":{},\"params\":{\"iotId\":\"2AQEq6SyHUSTZIbpThOe000100\"}}

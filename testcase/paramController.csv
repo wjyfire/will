@@ -1,0 +1,3 @@
+用例个数?2
+用例1-参数全传正确?{\"irControllerId\":\"2654\"}?"message":"成功"
+用例2-irControllerId为空?{\"irControllerId\":\"\"}?"message":"Parameter error"

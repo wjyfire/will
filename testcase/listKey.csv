@@ -1,0 +1,9 @@
+获取红外遥控电器按键功能列表###用例个数?8
+用例1-参数全传列表获取成功brandId=2,deviceTypeId=4,pageNo=2,pageSize=10?{\"brandId\" : \"2\",\"deviceTypeId\" : 4,\"pageNo\":2,\"pageSize\":10}?"keyCnName"
+用例2-deviceTypeId=4,pageNo=2,pageSize=10?{\"deviceTypeId\" : 4,\"pageNo\":2,\"pageSize\":10}?"message":"传的参数中有为空值"
+用例3-brandId=2,pageNo=2,pageSize=10?{\"brandId\" : \"2\",\"pageNo\":2,\"pageSize\":10}?"message":"传的参数中有为空值"
+用例4-pageNo=2,pageSize=10?{\"pageNo\":2,\"pageSize\":10}?"keyCnName"
+用例5-brandId=测试@##￥￥#%,deviceTypeId=4,pageNo=2,pageSize=10?{\"brandId\" : \"测试@##￥￥#%\",\"deviceTypeId\" : 4,\"pageNo\":2,\"pageSize\":10}?"total":0
+用例6-brandId=2,deviceTypeId=-9.999999999,pageNo=2,pageSize=10?{\"brandId\" :  \"2\",\"deviceTypeId\" :-9.999999999,\"pageNo\":2,\"pageSize\":10}?"total":0
+用例7-brandId=2,deviceTypeId=4,pageNo=-9.999999999,pageSize=10?{\"brandId\" : \"2\",\"deviceTypeId\" : 4,\"pageNo\":-9.999999999,\"pageSize\":10}?"keyCnName"
+用例8-brandId=2,deviceTypeId=4,pageNo=2,pageSize=-9.999999999?{\"brandId\" : \"2\",\"deviceTypeId\" : 4,\"pageNo\":2,\"pageSize\":-9.999999999}?"message":"参数错误"

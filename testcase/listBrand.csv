@@ -1,0 +1,7 @@
+获取红外遥控支持的品牌列表，irControllerFrom码库类型（0：all；1：酷控；2：自己，目前数据库只有库控的）###用例个数?6
+用例1-参数全传列表获取成功irControllerFrom=0,pageNo=1,pageSize=100?{\"irControllerFrom\" : 0,\"pageNo\":1,\"pageSize\":100}?"brandCnName"
+用例2-irControllerFrom=1,pageNo=1,pageSize=100?{\"irControllerFrom\":1,\"pageNo\":1,\"pageSize\":100}?"brandCnName"
+用例3-irControllerFrom=2,pageNo=1,pageSize=100?{\"irControllerFrom\":2,\"pageNo\":1,\"pageSize\":100}?"total":0
+用例4-irControllerFrom=-9.99999999999999999999,pageNo=1,pageSize=100?{\"irControllerFrom\":-9.99999999999999999999,\"pageNo\":1,\"pageSize\":100}?"total":0
+用例5-irControllerFrom=0,pageNo=-9.99999999999999999999,pageSize=100?{\"irControllerFrom\":0,\"pageNo\":-9.99999999999999999999,\"pageSize\":100}?"brandCnName"
+用例6-irControllerFrom=0,pageNo=1,pageSize=-9.99999999999999999999?{\"irControllerFrom\":0,\"pageNo\":1,\"pageSize\":-9.99999999999999999999}?"message":"请求参数错误"

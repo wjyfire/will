@@ -1,0 +1,8 @@
+获取红外遥控数据###用例个数?7
+用例1-参数全传正确type=true?{\"irControllerId\" : \"2654\",\"listFun\":[{\"keyCnName\": \"8\",\"keyEnName\": \"8\",\"keyId\": 96}],\"type\":true}?"brandId"
+用例2-参数全传正确type=false?{\"irControllerId\" : \"2654\",\"listFun\":[{\"keyCnName\": \"8\",\"keyEnName\": \"8\",\"keyId\": 96}],\"type\":false}?"value":""
+用例3-不传type值?{\"irControllerId\" : \"2654\",\"listFun\":[{\"keyCnName\": \"8\",\"keyEnName\": \"8\",\"keyId\": 96}]}?"value":""
+用例4-keyCnName不传?{\"irControllerId\" : \"2654\",\"listFun\":[{\"keyEnName\": \"8\",\"keyId\": 96}],\"type\":true}?"message":"Parameter error"
+用例5-keyEnName不传?{\"irControllerId\" : \"2654\",\"listFun\":[{\"keyCnName\": \"8\",\"keyId\": 96}],\"type\":true}?"message":"Parameter error"
+用例6-keyCnName、keyEnName不传?{\"irControllerId\" : \"2654\",\"listFun\":[{\"keyId\": 96}],\"type\":true}?"message":"Parameter error"
+用例7-keyId不传?{\"irControllerId\" : \"2654\",\"listFun\":[{\"keyCnName\": \"8\",\"keyEnName\": \"8\"}],\"type\":true}?"message":"Parameter error"

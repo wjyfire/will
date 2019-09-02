@@ -1,0 +1,12 @@
+目前提供给测试的PK为a1fC503XxQi，可分配6组不同的三元组，超过六组提示"没有可分配的三元组"###用例个数?11
+用例1-参数全传正确?{\"request\":{\"apiVer\":\"1.0\"},\"params\":{\"productKey\":\"a1fC503XxQi\",\"macAddress\":\"${random_macAddress}\"}}?"message":"成功"
+用例2-参数全传正确?{\"request\":{\"apiVer\":\"1.0\"},\"params\":{\"productKey\":\"a1fC503XxQi\",\"macAddress\":\"${random_macAddress}\"}}?"message":"成功"
+用例3-参数全传正确?{\"request\":{\"apiVer\":\"1.0\"},\"params\":{\"productKey\":\"a1fC503XxQi\",\"macAddress\":\"${random_macAddress}\"}}?"message":"成功"
+用例4-参数全传正确?{\"request\":{\"apiVer\":\"1.0\"},\"params\":{\"productKey\":\"a1fC503XxQi\",\"macAddress\":\"${random_macAddress}\"}}?"message":"成功"
+用例5-参数全传正确?{\"request\":{\"apiVer\":\"1.0\"},\"params\":{\"productKey\":\"a1fC503XxQi\",\"macAddress\":\"${random_macAddress}\"}}?"message":"成功"
+用例6-参数全传正确?{\"request\":{\"apiVer\":\"1.0\"},\"params\":{\"productKey\":\"a1fC503XxQi\",\"macAddress\":\"${random_macAddress}\"}}?"message":"成功"
+用例7-超过流组没有可分配三元组?{\"request\":{\"apiVer\":\"1.0\"},\"params\":{\"productKey\":\"a1fC503XxQi\",\"macAddress\":\"${random_macAddress}\"}}?"message":"没有可分配的三元组"
+用例8-apiVer为空?{\"request\":{\"apiVer\":\"\"},\"params\":{\"productKey\":\"a1fC503XxQi\",\"macAddress\":\"s\"}}?"message":"没有可分配的三元组"
+用例9-productKey为空?{\"request\":{\"apiVer\":\"1.0\"},\"params\":{\"productKey\":\"\",\"macAddress\":\"d\"}}?"message":"没有可分配的三元组"
+用例10-macAddress为空?{\"request\":{\"apiVer\":\"1.0\"},\"params\":{\"productKey\":\"a1fC503XxQi\",\"macAddress\":\"\"}}?"message":"没有可分配的三元组"
+用例11-传入特殊字符?{\"request\":{\"apiVer\":\"@￥##%￥%\"},\"params\":{\"productKey\":\"1\",\"macAddress\":\"1\"}}?"message":"没有可分配的三元组"
