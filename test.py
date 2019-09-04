@@ -1,6 +1,7 @@
 import web
 import json
 import csv
+import pymysql
         
 urls = (
     '/index', 'index',
@@ -11,17 +12,21 @@ class index:
     def GET(self):
         data = web.input()
         if data:
-            double_encode = json.dumps(data.content)
+            db = pymysql.connect("localhost", "root", "", "test")
+            cursor = db.cursor()
+       
+            sql = "INSERT INTO input_record(title, name, filename, json, assertion) \
+                   VALUES ('%s', '%s',  '%s',  '%s',  '%s')" % \
+                   (data.title, data.name, data.filename, json.dumps(data.content, ensure_ascii=False), data.assertion)
 
-            rows = [
-                [data.title, data.num],
-                [data.name, double_encode,data.assertion],
-                #['用例2 - iotId不存在', double_encode,'"data":true']
-            ]
+            try:
+                cursor.execute(sql)
+                db.commit()
+            except:
+                db.rollback()
 
-            with open(data.filename, 'w',newline='')as f:
-                f_csv = csv.writer(f,delimiter='?',quotechar='|',quoting=csv.QUOTE_NONE)
-                f_csv.writerows(rows)
+            db.close()
+
             return open(r'test.html', 'r').read()
         else:
             return open(r'test.html', 'r').read()
